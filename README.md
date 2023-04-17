@@ -23,5 +23,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🖱 Página publicada
 
  * https://www.figma.com/file/T2D3pbjz6GAjwSv5crIY8h/Coronav%C3%ADrus-RJ-Layout?node-id=0%3A1&t=aTmKWESkDKzfXtbz-1
- * https://matheussantos10.github.io/coronavirusRJ/
+ * https://matheussantos10.github.io/coronavirus-rj/
  * https://coronavirus-rj.vercel.app/
