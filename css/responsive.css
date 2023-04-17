@@ -22,13 +22,15 @@
    }
 
    .footer {
-      padding: 2em 0;
+      padding: 2em;
    }
 }
 
 @media (max-width: 1000px) {
    .container_titleState {
       justify-content: center;
+      margin-top: 2em;
+      margin-left: 0;
    }
 
    .subtitle,
@@ -36,17 +38,22 @@
       text-align: center;
    }
 
+   .subtitle {
+      margin-left: 0;
+   }
+
    .container_state {
       flex-direction: column;
+      width: 60%;
+   }
+
+   .info_search {
+      width: 60%;
    }
 
    .container_region {
       margin: 1em;
       overflow-x: auto;
-   }
-
-   .footer {
-      padding: 2em 8em;
    }
 
    .img_footer {
@@ -63,10 +70,6 @@
       gap: 20px;
       margin: 5em 1em;
       margin-top: 2em;
-   }
-
-   .info_search {
-      width: 40%;
    }
 
    .container_brasil {
@@ -92,35 +95,23 @@
    }
 
    .img_left {
-      width: 150px;
-   }
-
-   .img_right {
-      width: 200px;
-   }
-}
-
-@media (max-width: 600px) {
-   .img_left {
       width: 100px;
    }
+
    .img_right {
       width: 150px;
       bottom: -100px;
    }
 
-   .subtitle {
-      margin-left: 0;
+   .footer {
+      padding: 2em 6em;
    }
+}
 
+@media (max-width: 600px) {
    .img_flag {
-      margin-left: 0.5em;
-      height: 50px;
-      width: 80px;
-   }
-
-   .container_state {
-      width: 60%;
+      height: 40px;
+      width: 60px;
    }
 
    .container_city {
@@ -138,8 +129,9 @@
       position: relative;
    }
 
-   .info_search {
-      width: 60%;
+   .title_centralized {
+      font-size: 35px;
+      top: -25px;
    }
 
    .field_search {
@@ -147,45 +139,31 @@
       justify-content: center;
    }
 
-   .field_search input {
-      font-size: 14px;
+   .text_search {
+      font-size: 12px;
       width: 70%;
       padding-left: 1.5em;
    }
 
    .btn_search img {
-      width: 70%;
+      width: 60%;
    }
-
    .container_devs {
+      flex-direction: column;
+      align-items: center;
       gap: 2em;
    }
 }
 
 @media (max-width: 470px) {
    .title_RJ,
-   .title_RJ,
    .titles {
-      font-size: 28px;
-   }
-
-   .container_titleState {
-      margin-top: 2em;
-      margin-left: 0;
+      font-size: 25px;
    }
 
    .title_centralized {
-      font-size: 28px;
+      font-size: 25px;
       top: -20px;
-   }
-
-   .footer {
-      padding: 2em 5em;
-   }
-
-   .container_devs {
-      flex-direction: column;
-      align-items: center;
    }
 
    .img_footer {

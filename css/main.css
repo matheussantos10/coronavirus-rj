@@ -1,22 +1,26 @@
+:root {
+   --white: #ffffff;
+   --gray-primary: #f5f5f5;
+   --gray-secundary: #757575;
+   --dark-gray: #656565;
+   --blue-primary: #01579b;
+}
 .container_titleState {
    margin-top: 30px;
    margin-left: 90px;
    display: flex;
-   align-items: center;
 }
 
 .title_RJ {
    font-family: "Inter", sans-serif;
-   font-weight: 700;
    font-size: 52px;
-   color: #01579b;
+   color: var(--blue-primary);
 }
 
 .img_flag {
-   border: 1px solid #01589b60;
-   border-radius: 5px;
-   height: 60px;
-   width: 100px;
+   border: 1px solid rgba(1, 88, 155, 0.4);
+   height: 50px;
+   width: 80px;
    margin-left: 1em;
 }
 
@@ -25,16 +29,15 @@
    font-weight: 600;
    font-size: 25px;
    margin-left: 90px;
-   color: #8c8c8c;
+   color: var(--gray-secundary);
 }
 
 .container_state {
-   background-color: #f5f5f5;
+   background-color: var(--gray-primary);
    border-radius: 15px;
    margin: 2em auto;
-   width: 40%;
+   width: 45%;
    display: flex;
-   justify-content: center;
 }
 
 .info_state,
@@ -47,8 +50,7 @@
 .title_brasil {
    font-family: "Inter", sans-serif;
    font-weight: 600;
-   font-size: 22px;
-   color: #01579b;
+   color: var(--blue-primary);
 }
 
 .number_state,
@@ -56,26 +58,26 @@
    font-family: "Inter", sans-serif;
    font-weight: 500;
    font-size: 22px;
-   color: #656565;
+   color: var(--dark-gray);
 }
 
 .titles {
    font-family: "Inter", sans-serif;
-   font-weight: 700;
    font-size: 52px;
-   margin: 0.5em 90px;
-   color: #01579b;
+   margin: 0 90px;
+   color: var(--blue-primary);
 }
 
 .container_city {
    display: flex;
-   margin: 0 90px 7em;
+   margin: 1em 90px;
+   margin-bottom: 7em;
    gap: 1em;
 }
 
 .info_city {
    padding: 1em;
-   background-color: #f5f5f5;
+   background-color: var(--gray-primary);
    border-radius: 15px;
    width: 25%;
 }
@@ -83,8 +85,7 @@
 .line {
    width: 80%;
    height: 2px;
-   background-color: #0364ae;
-   border-radius: 5px;
+   background-color: var(--blue-primary);
 }
 
 .info_city h2,
@@ -92,8 +93,7 @@
 .info_search h2,
 .info_search h3 {
    font-family: "Inter", sans-serif;
-   font-weight: 600;
-   color: #01579b;
+   color: var(--blue-primary);
    padding-top: 10px;
 }
 
@@ -101,16 +101,15 @@
 .info_search p {
    font-family: "Inter", sans-serif;
    font-weight: 500;
-   color: #8c8c8c;
+   color: var(--dark-gray);
 }
 
 .container_search {
-   border-bottom: 3px solid #0364ae;
-   border-top: 3px solid #0364ae;
-   position: relative;
+   border-top: 3px solid var(--blue-primary);
+   border-bottom: 3px solid var(--blue-primary);
    margin: 3em 0;
    height: 50vh;
-   padding-bottom: 45px;
+   padding-bottom: 1em;
 }
 
 .container_centralized {
@@ -120,26 +119,25 @@
 
 .title_centralized {
    font-family: "Inter", sans-serif;
-   font-weight: 700;
    font-size: 52px;
-   color: #01579b;
-   background-color: #ffffff;
+   color: var(--blue-primary);
+   background-color: var(--white);
    padding: 0 1em;
    position: relative;
-   top: -40px;
+   top: -35px;
 }
 
 .field_search {
    display: flex;
-   margin: 4em 6em 2em;
+   margin: 1em 6em;
    border: none;
 }
 
-.field_search input {
+.text_search {
    border: none;
    border-radius: 10px;
-   background-color: #f5f5f5;
-   color: #8c8c8c;
+   background-color: var(--gray-primary);
+   color: var(--gray-secundary);
    width: 100%;
    padding-left: 2em;
    font-family: "Inter", sans-serif;
@@ -147,19 +145,19 @@
    font-size: 16px;
 }
 
-.field_search input:focus {
-   outline: 1px solid #65656550;
+.text_search:focus {
+   outline: 1px solid rgba(101, 101, 101, 0.3);
 }
 
-.field_search button {
-   background-color: #01579b;
+.btn_search {
+   background-color: var(--blue-primary);
    padding: 10px 15px;
    border: none;
    border-radius: 10px;
    cursor: pointer;
 }
 
-.field_search button:hover {
+.btn_search:hover {
    opacity: 0.8;
 }
 
@@ -171,8 +169,8 @@
 
 /* Animação de loading */
 .loader_animation {
-   border: 6px solid #e5e5e5;
-   border-top-color: #01579b;
+   border: 6px solid var(--gray-primary);
+   border-top-color: var(--blue-primary);
    border-radius: 50%;
    height: 50px;
    width: 50px;
@@ -183,14 +181,13 @@
       transform: rotate(1turn);
    }
 }
-/* */
 
 .info_search {
-   background-color: #f5f5f5;
+   background-color: var(--gray-primary);
    border-radius: 15px;
    width: 30%;
    padding: 1em 2em;
-   border-top: #01579b 3px solid;
+   border-top: var(--blue-primary) 3px solid;
 }
 
 .container_not_found {
@@ -204,62 +201,58 @@
    margin: 1em;
 }
 
-.container_not_found h2 {
+.text_not_found {
    font-family: "Inter", sans-serif;
-   font-weight: 600;
-   color: #8c8c8c;
+   color: var(--gray-secundary);
 }
 
 .container_brasil {
-   background-color: #f5f5f5;
-   margin: 2.5em 0;
+   background-color: var(--gray-primary);
+   margin: 2em 0;
    display: flex;
+}
+
+.container_date {
+   font-family: "Inter", sans-serif;
+   color: var(--dark-gray);
+   text-align: end;
+   text-decoration: underline;
+   margin: 1em 6em;
 }
 
 .container_region {
    display: flex;
    flex-direction: column;
-   margin: 2em 6em;
-}
-
-.container_date {
-   font-family: "Inter", sans-serif;
-   font-weight: 600;
-   color: #656565;
-   text-align: end;
-   text-decoration: underline;
-   margin: 1em 6em;
+   margin: 2em 4em;
 }
 
 .table_region {
    font-family: "Inter", sans-serif;
    font-weight: 600;
    border-collapse: collapse;
-   border: 1px solid #4d404010;
+   border: 1px solid rgba(77, 64, 64, 0.1);
    text-align: center;
 }
 
 .table_title {
-   background-color: #01579b;
-   color: #ffffff;
+   background-color: var(--blue-primary);
+   color: var(--white);
    font-size: 24px;
 }
 
 .table_title th {
-   padding: 0.5em 2em;
+   padding: 0.5em 1em;
 }
 
 .region_name {
    text-align: start;
-   padding: 0 1em;
-   font-size: 22px;
-   color: #01579b;
+   padding-left: 1em;
+   color: var(--blue-primary);
 }
 
 tbody tr {
    height: 50px;
-   background-color: #ffffff;
    font-size: 20px;
-   color: #656565;
+   color: var(--dark-gray);
    font-weight: 500;
 }

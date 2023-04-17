@@ -15,14 +15,15 @@ const renderState = () => {
    const { casosAcumulado, obitosAcumulado } = stateRJ[0];
 
    containerState.innerHTML = `
-    <div class="info_state">
-       <h2 class="title_state">Casos confirmados</h2>
-       <h4 class="number_state">${formatDecimal(casosAcumulado)}</h4>
-    </div>
-    <div class="info_state">
-       <h2 class="title_state">Obitos</h2>
-       <h4 class="number_state">${formatDecimal(obitosAcumulado)}</h4>
-    </div>`;
+      <div class="info_state">
+         <h2 class="title_state">Casos confirmados</h2>
+         <h4 class="number_state">${formatDecimal(casosAcumulado)}</h4>
+      </div>
+      <div class="info_state">
+         <h2 class="title_state">Obitos</h2>
+         <h4 class="number_state">${formatDecimal(obitosAcumulado)}</h4>
+      </div>  
+   `;
 };
 
 const renderCitys = () => {
@@ -47,7 +48,8 @@ const renderCitys = () => {
             <p>Casos confirmados</p>
             <h3>${formatDecimal(city.obitosAcumulado)}</h3>
             <p>Óbitos</p>
-         </div>`;
+         </div>
+      `;
    });
 };
 
@@ -117,15 +119,15 @@ const renderRegion = () => {
                <td>${formatDecimal(casosAcumulado)}</td>
                <td>${formatDecimal(obitosAcumulado)}</td>
             </tr>
-         </tbody>`;
+         </tbody>
+      `;
    });
 };
 
 function searchCity() {
    const { portalMunicipio } = STORE_DATA;
-   const UF_RIO_JANEIRO = 33;
-
    const containerPesquisa = document.querySelector(".container_citySearched");
+   const UF_RIO_JANEIRO = 33;
 
    containerPesquisa.innerHTML = `<div class="loader_animation"></div>`;
 
@@ -146,16 +148,16 @@ function searchCity() {
          <div class="info_search">
             <h2>${nome}</h2>
             <div class="line"></div>
-               <h3>${formatDecimal(casosAcumulado)}</h3>
-               <p>Casos confirmados</p>
-               <h3>${formatDecimal(obitosAcumulado)}</h3>
-               <p>Óbitos</p>
+            <h3>${formatDecimal(casosAcumulado)}</h3>
+            <p>Casos confirmados</p>
+            <h3>${formatDecimal(obitosAcumulado)}</h3>
+            <p>Óbitos</p>
          </div>`;
    } else {
       containerPesquisa.innerHTML = `
          <div class="container_not_found">
             <img src="img/cityNotFound.png" alt="cidade não encontrada" class="img_not_found" />
-            <h2> Cidade não encontrada!</h2>
+            <h2 class="text_not_found"> Cidade não encontrada!</h2>
          </div>`;
    }
 }

@@ -19,8 +19,6 @@ function handleKeyPress() {
 }
 
 window.onload = () => {
-   setListener();
-
    dataState().then(() => renderState());
 
    dataCity().then(() => renderCitys());
@@ -29,4 +27,6 @@ window.onload = () => {
       renderBrazil();
       renderRegion();
    });
+
+   setListener();
 };

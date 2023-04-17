@@ -6,12 +6,9 @@
    justify-content: center;
    position: relative;
    overflow: hidden;
-   width: auto;
 }
 
 .container_title {
-   display: flex;
-   flex-direction: column;
    text-align: center;
    color: #ffffff;
 }
@@ -19,7 +16,7 @@
 .main_title {
    font-family: "Inter", sans-serif;
    font-size: 80px;
-   font-weight: 800;
+   text-transform: uppercase;
 }
 
 .secundary_title {
@@ -40,5 +37,5 @@
    width: 300px;
    position: absolute;
    bottom: -170px;
-   right: 0;
+   right: 0px;
 }

@@ -2,7 +2,7 @@ import STORE_DATA from "../storeData.js";
 import { ROUTES } from "../routes.js";
 import { executorRequest } from "../http/executor.js";
 
-// Função para buscar dados do estado
+// Funções para buscar dados da API
 const dataState = () => {
    return new Promise((resolve, reject) => {
       executorRequest(ROUTES.portalEstado)

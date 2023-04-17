@@ -2,7 +2,7 @@
    background-color: #01579b;
    text-align: center;
    color: #ffffff;
-   padding: 2em 30em;
+   padding: 2em;
    position: relative;
    overflow: hidden;
 }
@@ -20,7 +20,8 @@
 
 .text_footer {
    font-family: "Inter", sans-serif;
-   font-size: 15px;
+   font-weight: 500;
+   font-size: 16px;
 }
 
 .img_footer {
