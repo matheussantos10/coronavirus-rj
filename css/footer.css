@@ -1,0 +1,32 @@
+.footer {
+   background-color: #01579b;
+   text-align: center;
+   color: #ffffff;
+   padding: 2em 30em;
+   position: relative;
+   overflow: hidden;
+}
+
+.container_devs {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2em;
+   gap: 5em;
+}
+
+.container_devs img {
+   width: 120px;
+}
+
+.text_footer {
+   font-family: "Inter", sans-serif;
+   font-size: 15px;
+}
+
+.img_footer {
+   position: absolute;
+   right: 0;
+   bottom: -110px;
+   height: 300px;
+   width: 160px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/header.css" />
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="css/footer.css" />
+      <link rel="stylesheet" href="css/responsive.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap"
+         ref="stylesheet"
+      />
+
+      <title>Coronavírus RJ</title>
+   </head>
+   <body>
+      <header class="banner">
+         <div class="container_title">
+            <h1 class="main_title">CORONAVÍRUS</h1>
+            <h2 class="secundary_title">(Covid-19)</h2>
+         </div>
+         <img src="img/virusLeft.svg" alt="imagem vírus" class="img_left" />
+         <img src="img/virusRight.svg" alt="imagem vírus" class="img_right" />
+      </header>
+
+      <main>
+         <section>
+            <div class="container_titleState">
+               <h2 class="title_RJ">Rio de Janeiro</h2>
+               <img
+                  src="img/flag_RJ.png"
+                  alt="bandeira do estado do Rio de Janeiro"
+                  class="img_flag"
+               />
+            </div>
+
+            <h3 class="subtitle">Informações estaduais</h3>
+
+            <div class="container_state"></div>
+
+            <h2 class="titles">Principais Cidades</h2>
+            <div class="container_city"></div>
+         </section>
+
+         <section class="container_search">
+            <div class="container_centralized">
+               <h2 class="title_centralized">Pesquisar Cidades</h2>
+            </div>
+
+            <fieldset class="field_search">
+               <input
+                  type="text"
+                  placeholder="Digite o nome da cidade desejada"
+                  class="text_search"
+               />
+               <button type="submit" class="btn_search">
+                  <img src="img/search.svg" alt="icone de lupa" />
+               </button>
+            </fieldset>
+
+            <div class="container_citySearched"></div>
+         </section>
+
+         <section>
+            <h2 class="titles">Casos - Brasil e Regiões</h2>
+            <div class="container_brasil"></div>
+
+            <div class="container_date"></div>
+
+            <div class="container_region">
+               <table class="table_region">
+                  <thead class="table_title">
+                     <tr>
+                        <th>Região</th>
+                        <th>População total</th>
+                        <th>Casos confirmados</th>
+                        <th>Óbitos confirmados</th>
+                     </tr>
+                  </thead>
+               </table>
+            </div>
+         </section>
+      </main>
+
+      <footer class="footer">
+         <div class="container_devs">
+            <img src="img/matheus.svg" alt="imagem Matheus" />
+            <img src="img/hector.svg" alt="imagem Hector" />
+            <img src="img/natalia.svg" alt="imagem Natália" />
+         </div>
+
+         <h4 class="text_footer">
+            Feito por Matheus Santos, auxilio por Hector Silva e desenhado por Natália Almeida
+            &#10084;
+         </h4>
+
+         <img src="img/virusRight.svg" alt="imagem vírus" class="img_footer" />
+      </footer>
+
+      <script src="./js/storeData.js" type="module"></script>
+      <script src="./js/routes.js" type="module"></script>
+      <script src="./js/format.js" type="module"></script>
+      <script src="./js/http/executor.js" type="module"></script>
+      <script src="./js/http/requests.js" type="module"></script>
+      <script src="./js/view/render.js" type="module"></script>
+      <script src="./js/main.js" type="module"></script>
+   </body>
+</html>

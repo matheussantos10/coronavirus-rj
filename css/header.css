@@ -1,0 +1,44 @@
+.banner {
+   background-color: #01579b;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   overflow: hidden;
+   width: auto;
+}
+
+.container_title {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   color: #ffffff;
+}
+
+.main_title {
+   font-family: "Inter", sans-serif;
+   font-size: 80px;
+   font-weight: 800;
+}
+
+.secundary_title {
+   font-family: "Inter", sans-serif;
+   font-size: 60px;
+   font-weight: 100;
+   font-style: italic;
+}
+
+.img_left {
+   width: 250px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.img_right {
+   width: 300px;
+   position: absolute;
+   bottom: -170px;
+   right: 0;
+}
