@@ -1,6 +1,6 @@
 # coronavirusRJ
 
-Projeto de site informativo com dados do Covid-19 no RJ e Brasil!
+Projeto de site informativo com dados do Covid-19 no RJ e Brasil! 🦠
 
 <h1 align="center">Coronavirus RJ</h1>
 
