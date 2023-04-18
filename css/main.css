@@ -38,6 +38,7 @@
    margin: 2em auto;
    width: 45%;
    display: flex;
+   margin-bottom: 3em;
 }
 
 .info_state,
@@ -71,8 +72,8 @@
 .container_city {
    display: flex;
    margin: 1em 90px;
-   margin-bottom: 7em;
    gap: 1em;
+   margin-bottom: 3em;
 }
 
 .info_city {
@@ -104,12 +105,23 @@
    color: var(--dark-gray);
 }
 
+.container_graph {
+   background-color: var(--gray-primary);
+   border-radius: 15px;
+   padding: 1em 2em;
+   width: calc(100% / 2);
+   max-width: 100%;
+   margin: 1em auto;
+   margin-bottom: 3em;
+}
+
 .container_search {
    border-top: 3px solid var(--blue-primary);
    border-bottom: 3px solid var(--blue-primary);
    margin: 3em 0;
    height: 50vh;
-   padding-bottom: 1em;
+   margin-top: 7em;
+   margin-bottom: 3em;
 }
 
 .container_centralized {
@@ -224,6 +236,7 @@
    display: flex;
    flex-direction: column;
    margin: 2em 4em;
+   margin-bottom: 3em;
 }
 
 .table_region {

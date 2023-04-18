@@ -31,7 +31,7 @@ const renderCitys = () => {
    const containerCidades = document.querySelector(".container_city");
 
    const mainCitys = portalMunicipio.filter((citys) => {
-      const myCitys = ["Rio de Janeiro", "São Gonçalo", "Niterói", "Nova Iguaçu"];
+      const myCitys = ["Rio de Janeiro", "São Gonçalo", "Niterói", "Petrópolis"];
 
       if (myCitys.includes(citys.nome)) {
          return citys;
@@ -52,6 +52,55 @@ const renderCitys = () => {
       `;
    });
 };
+
+let graphCity;
+function chartCity() {
+   const { portalMunicipio } = STORE_DATA;
+   const canvasCity = document.getElementById("main-citys");
+   const labelsCity = ["Nova Iguaçu", "Campos dos Goytacazes", "Duque de Caxias"];
+   let valuesCasesCity = [];
+   let valuesDeathCity = [];
+
+   portalMunicipio.forEach((city) => {
+      if (labelsCity.includes(city.nome)) {
+         valuesCasesCity.push(city.casosAcumulado);
+         valuesDeathCity.push(city.obitosAcumulado);
+      }
+   });
+   graphCity = new Chart(canvasCity, {
+      type: "bar",
+      data: {
+         labels: labelsCity,
+         datasets: [
+            {
+               label: "Casos acumulados",
+               data: valuesCasesCity,
+               borderWidth: 2,
+               backgroundColor: "#01579b",
+               borderRadius: 10,
+            },
+            {
+               label: "Óbitos acumulados",
+               data: valuesDeathCity,
+               borderWidth: 2,
+               backgroundColor: "#ce0404",
+               borderRadius: 10,
+            },
+         ],
+      },
+      options: {
+         plugins: {
+            title: {
+               display: true,
+               text: "teste",
+            },
+            labels: {
+               font: { weigth: "bold" },
+            },
+         },
+      },
+   });
+}
 
 const renderBrazil = () => {
    const { portalGeral } = STORE_DATA;
@@ -162,4 +211,4 @@ function searchCity() {
    }
 }
 
-export { renderState, renderCitys, renderBrazil, renderRegion, searchCity };
+export { renderState, renderCitys, renderBrazil, renderRegion, searchCity, chartCity, graphCity };

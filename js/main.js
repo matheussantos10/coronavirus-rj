@@ -1,9 +1,18 @@
 import { dataState, dataBrazil, dataCity } from "./http/requests.js";
-import { renderState, renderCitys, renderBrazil, renderRegion, searchCity } from "./view/render.js";
+import {
+   renderState,
+   renderCitys,
+   renderBrazil,
+   renderRegion,
+   searchCity,
+   graphCity,
+   chartCity,
+} from "./view/render.js";
 
 function setListener() {
    handleSearchCity();
    handleKeyPress();
+   handleRenderGraph();
 }
 
 function handleSearchCity() {
@@ -18,10 +27,22 @@ function handleKeyPress() {
    });
 }
 
+function handleRenderGraph() {
+   window.addEventListener("resize", reRenderGraph);
+}
+
+function reRenderGraph() {
+   graphCity.destroy();
+   chartCity();
+}
+
 window.onload = () => {
    dataState().then(() => renderState());
 
-   dataCity().then(() => renderCitys());
+   dataCity().then(() => {
+      chartCity();
+      renderCitys();
+   });
 
    dataBrazil().then(() => {
       renderBrazil();
