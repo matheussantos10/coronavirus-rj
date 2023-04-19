@@ -3,6 +3,7 @@
    text-align: center;
    color: #ffffff;
    padding: 2em;
+   padding-top: 5em;
    position: relative;
    overflow: hidden;
 }
@@ -11,7 +12,7 @@
    display: flex;
    justify-content: center;
    margin-bottom: 2em;
-   gap: 5em;
+   gap: 3em;
 }
 
 .container_devs img {

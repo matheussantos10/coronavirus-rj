@@ -22,6 +22,14 @@
       margin: 1em auto;
    }
 
+   .container_brasil {
+      flex-wrap: wrap;
+   }
+
+   .info_brasil {
+      width: 50%;
+   }
+
    .container_date {
       text-align: center;
       margin: 2em 0;
@@ -53,6 +61,19 @@
       width: 60%;
    }
 
+   .container_city {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 2em 1em;
+      margin-bottom: 3em;
+   }
+
+   .info_city {
+      width: 35%;
+   }
+
    .info_search {
       width: 60%;
    }
@@ -65,22 +86,6 @@
    .img_footer {
       width: 120px;
       bottom: -130px;
-   }
-}
-
-@media (max-width: 940px) {
-   .container_city {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 2em 1em;
-      margin-bottom: 3em;
-   }
-
-   .container_brasil {
-      display: flex;
-      flex-direction: column;
    }
 }
 
@@ -153,6 +158,12 @@
    .btn_search img {
       width: 60%;
    }
+
+   .container_brasil {
+      display: flex;
+      flex-direction: column;
+   }
+
    .container_devs {
       flex-direction: column;
       align-items: center;

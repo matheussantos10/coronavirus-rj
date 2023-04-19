@@ -88,17 +88,6 @@ function chartCity() {
             },
          ],
       },
-      options: {
-         plugins: {
-            title: {
-               display: true,
-               text: "teste",
-            },
-            labels: {
-               font: { weigth: "bold" },
-            },
-         },
-      },
    });
 }
 
@@ -180,20 +169,21 @@ function searchCity() {
 
    containerPesquisa.innerHTML = `<div class="loader_animation"></div>`;
 
-   let textSearch = document.querySelector(".text_search");
+   setTimeout(() => {
+      let textSearch = document.querySelector(".text_search");
 
-   const cityFound = portalMunicipio.filter((citys) => {
-      const isRioJaneiro = Number(citys.cod.substring(0, 2)) === UF_RIO_JANEIRO;
+      const cityFound = portalMunicipio.filter((citys) => {
+         const isRioJaneiro = Number(citys.cod.substring(0, 2)) === UF_RIO_JANEIRO;
 
-      if (toCompareString(citys.nome) === toCompareString(textSearch.value) && isRioJaneiro) {
-         return citys;
-      }
-   });
+         if (toCompareString(citys.nome) === toCompareString(textSearch.value) && isRioJaneiro) {
+            return citys;
+         }
+      });
 
-   if (cityFound.length) {
-      const { nome, casosAcumulado, obitosAcumulado } = cityFound[0];
+      if (cityFound.length) {
+         const { nome, casosAcumulado, obitosAcumulado } = cityFound[0];
 
-      containerPesquisa.innerHTML = `
+         containerPesquisa.innerHTML = `
          <div class="info_search">
             <h2>${nome}</h2>
             <div class="line"></div>
@@ -202,13 +192,14 @@ function searchCity() {
             <h3>${formatDecimal(obitosAcumulado)}</h3>
             <p>Óbitos</p>
          </div>`;
-   } else {
-      containerPesquisa.innerHTML = `
+      } else {
+         containerPesquisa.innerHTML = `
          <div class="container_not_found">
-            <img src="img/cityNotFound.png" alt="cidade não encontrada" class="img_not_found" />
+            <img src="img/cityNotFound.svg" alt="cidade não encontrada" class="img_not_found" />
             <h2 class="text_not_found"> Cidade não encontrada!</h2>
          </div>`;
-   }
+      }
+   }, 300);
 }
 
 export { renderState, renderCitys, renderBrazil, renderRegion, searchCity, chartCity, graphCity };
