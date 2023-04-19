@@ -5,7 +5,7 @@ Projeto de site informativo com dados do Covid-19 no RJ e Brasil!
 
 <p align="center">
   <h2>🏠 Home </h2>
-  <img src="https://user-images.githubusercontent.com/82851463/232521626-a4cf7d50-c56a-43d5-862f-9ab8cf7bef12.png"/>
+  <img src="https://user-images.githubusercontent.com/82851463/232943318-64238eed-f101-44c7-85f8-cc97479d18b6.png"/>
 </p>
 
 ## 🚀 Tecnologias
