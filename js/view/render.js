@@ -1,5 +1,6 @@
 import STORE_DATA from "../storeData.js";
 import { formatDecimal, toCompareString } from "../format.js";
+import { uf } from "../ufState.js";
 
 const renderState = () => {
    const containerState = document.querySelector(".container_state");
@@ -163,9 +164,8 @@ const renderRegion = () => {
 };
 
 function searchCity() {
-   const { portalMunicipio } = STORE_DATA;
+   const { portalMunicipio, selectState } = STORE_DATA;
    const containerPesquisa = document.querySelector(".container_citySearched");
-   const UF_RIO_JANEIRO = 33;
 
    containerPesquisa.innerHTML = `<div class="loader_animation"></div>`;
 
@@ -173,7 +173,7 @@ function searchCity() {
       let textSearch = document.querySelector(".text_search");
 
       const cityFound = portalMunicipio.filter((citys) => {
-         const isRioJaneiro = Number(citys.cod.substring(0, 2)) === UF_RIO_JANEIRO;
+         const isRioJaneiro = Number(citys.cod.substring(0, 2)) === selectState;
 
          if (toCompareString(citys.nome) === toCompareString(textSearch.value) && isRioJaneiro) {
             return citys;
@@ -202,4 +202,25 @@ function searchCity() {
    }, 300);
 }
 
-export { renderState, renderCitys, renderBrazil, renderRegion, searchCity, chartCity, graphCity };
+function renderSelectState() {
+   const selectState = document.querySelector(".select_state");
+   const isSelected = (codigo_uf) => codigo_uf === STORE_DATA.selectState;
+   uf.forEach((state) => {
+      selectState.innerHTML += `
+      <option value="${state.codigo_uf}" ${isSelected(state.codigo_uf) ? "selected" : ""}>
+         ${state.uf}
+      </option>
+   `;
+   });
+}
+
+export {
+   renderState,
+   renderCitys,
+   renderBrazil,
+   renderRegion,
+   searchCity,
+   chartCity,
+   graphCity,
+   renderSelectState,
+};

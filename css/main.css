@@ -162,7 +162,7 @@
 }
 
 .text_search {
-   border: none;
+   border: 1px solid rgba(75, 75, 75, 0.3);
    border-radius: 10px;
    background-color: var(--gray-primary);
    color: var(--gray-secundary);
@@ -174,7 +174,19 @@
 }
 
 .text_search:focus {
-   outline: 1px solid rgba(101, 101, 101, 0.3);
+   outline: 1px solid rgba(75, 75, 75, 0.7);
+}
+
+.select_state {
+   background-color: var(--gray-primary);
+   border: 1px solid rgba(75, 75, 75, 0.3);
+   border-radius: 10px;
+   padding: 0 1em;
+   font-size: 16px;
+}
+
+.select_state option {
+   font-size: 18px;
 }
 
 .btn_search {

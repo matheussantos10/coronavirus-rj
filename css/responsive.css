@@ -114,6 +114,30 @@
       bottom: -100px;
    }
 
+   .field_search {
+      margin: 4em 3em;
+      justify-content: center;
+   }
+
+   .text_search {
+      font-size: 10px;
+      width: 100%;
+      padding-left: 1.5em;
+   }
+
+   .select_state {
+      font-size: 12px;
+      padding: 0 0.5em;
+   }
+
+   .select_state option {
+      font-size: 14px;
+   }
+
+   .btn_search img {
+      width: 60%;
+   }
+
    .footer {
       padding: 2em 6em;
    }
@@ -142,21 +166,6 @@
    .title_centralized {
       font-size: 35px;
       top: -25px;
-   }
-
-   .field_search {
-      margin: 4em 3em;
-      justify-content: center;
-   }
-
-   .text_search {
-      font-size: 12px;
-      width: 70%;
-      padding-left: 1.5em;
-   }
-
-   .btn_search img {
-      width: 60%;
    }
 
    .container_brasil {

@@ -1,3 +1,4 @@
+import STORE_DATA from "./storeData.js";
 import { dataState, dataBrazil, dataCity } from "./http/requests.js";
 import {
    renderState,
@@ -7,12 +8,14 @@ import {
    searchCity,
    graphCity,
    chartCity,
+   renderSelectState,
 } from "./view/render.js";
 
 function setListener() {
    handleSearchCity();
    handleKeyPress();
    handleRenderGraph();
+   handleSelectState();
 }
 
 function handleSearchCity() {
@@ -24,6 +27,12 @@ function handleKeyPress() {
       if (event.key === "Enter") {
          searchCity();
       }
+   });
+}
+
+function handleSelectState() {
+   document.querySelector(".select_state").addEventListener("change", (event) => {
+      STORE_DATA.selectState = Number(event.target.value);
    });
 }
 
@@ -50,4 +59,6 @@ window.onload = () => {
    });
 
    setListener();
+
+   renderSelectState();
 };
