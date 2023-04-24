@@ -1,41 +1,41 @@
 .banner {
-   background-color: #01579b;
-   height: 400px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   overflow: hidden;
+    background-color: #01579b;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .container_title {
-   text-align: center;
-   color: #ffffff;
+    text-align: center;
+    color: #ffffff;
 }
 
 .main_title {
-   font-family: "Inter", sans-serif;
-   font-size: 80px;
-   text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
 }
 
 .secundary_title {
-   font-family: "Inter", sans-serif;
-   font-size: 60px;
-   font-weight: 100;
-   font-style: italic;
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .img_left {
-   width: 250px;
-   position: absolute;
-   top: 0;
-   left: 0;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .img_right {
-   width: 300px;
-   position: absolute;
-   bottom: -170px;
-   right: 0px;
+    width: 300px;
+    position: absolute;
+    bottom: -170px;
+    right: 0px;
 }
