@@ -1,6 +1,6 @@
 <h1 align="center">Coronavirus RJ 🦠</h1>
 
-Projeto de site informativo com dados do Covid-19 no RJ e Brasil!
+Projeto de site informativo com dados sobre a pandemia do Covid-19 no RJ e Brasil!
 <br>
 
 <p align="center">
