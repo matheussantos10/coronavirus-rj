@@ -12,12 +12,11 @@ Projeto de site informativo com dados sobre a pandemia do Covid-19 no RJ e Brasi
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+-  Figma
 -  HTML
 -  CSS
 -  JavaScript
--  Figma
 -  API
--  Git e Github
 -  Vercel
 
 ## 🖱 Página publicada
